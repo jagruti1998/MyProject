@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">  
+function matchpass(){  
+var un=document.f1.un.value;  
+var pw=document.f1.pw.value;  
+  
+if(un=="user"&&pw=="1234"){  
+return true;  
+}  
+else{  
+alert("Please enter correct login details");  
+return false;  
+}  
+}  
+</script>
+<h2>User Login</h2>  
+<form name="f1" action="userpage.html" onsubmit="return matchpass()">  
+Username:<input type="text" name="un" /><br/> <br> 
+Password:<input type="password" name="pw"/><br/>  
+<input type="submit" value=submit>  
+</form>  
+</body>
+</html>
